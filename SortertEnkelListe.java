@@ -2,18 +2,17 @@ import java.util.Iterator;
 
 // extends Comparable<E> & Lik> 
 class SortertEnkelListe<E> implements AbstraktSortertEnkelListe<E>, Comparable<E>, Lik {
-	private Node head;
-	private Node tail;
+	private Node head, tail;
 	private int nodeCount;
 
 	SortertEnkelListe() {
 		head = tail = null;
 		nodeCount = 0;
 	}
-	// @Override
-	// public int compareTo (E element) {
-	// 	return;
-	// }
+
+	public int compareTo (E element) {
+	 	return;
+	 }
 
 	public void settInn (E element) {
 		if (head == null) {
@@ -26,7 +25,8 @@ class SortertEnkelListe<E> implements AbstraktSortertEnkelListe<E>, Comparable<E
 	}
 
 	public E finn (String s) {
-
+		//fPIL = first Node In Line
+		Node fNIL = head
 	// 	E e = head.link;
  //        for (int i = nodes; i>0; i--) {
 	//     if (p.hentNavn().equals(s)) return p;
